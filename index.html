@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luka Zotovikj | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Slide swiper css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+</head>
+
+<body>
+    <!-- HERO HEADER & NAV -->
+    <header id="home">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="" class="logo_img">
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="CV.pdf" download="Luka_Zotovikj_CV.pdf">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="bars">
+                <i class="ri-menu-2-fill"></i>
+            </div>
+        </nav>
+        <!-- Theme Toggle Button outside of nav -->
+        <!-- Add this outside of the nav section, in the body -->
+        <div class="theme-toggle-container">
+            <div id="sun-icon" class="theme-icon" style="display: none;">&#9728;</div> <!-- Sun icon for light theme -->
+            <div id="moon-icon" class="theme-icon">&#9790;</div> <!-- Moon icon for dark theme -->
+        </div>
+
+        <!-- HERO HEADER -->
+        <div class="hero_header">
+            <img src="shape-one.png" alt="" class="hero_shape">
+            <img src="border-one.png" alt="" class="hero_shape border_shape">
+            <div class="hero_img">
+                <img src="hero_img.png" alt="">
+            </div>
+            <div class="hero_content">
+                <h2>Hi, I am</h2>
+                <h1>Luka Zotovikj <img src="shape-two.png" alt="" class="text_shape"></h1>
+                <h3>I am a <span class="text"></span></h3>
+                <div class="hero_btns">
+                    <button onclick="downloadCV()" class="dark_color">Download CV</button>
+                    <button onclick="sendEmail()" class="dark_color">Let's talk <i
+                            class="ri-arrow-right-up-line"></i></button>
+                </div>
+            </div>
+            <div class="top_bg_text">Luka</div>
+            <div class="bottom_bg_text">Zotovikj</div>
+            <img src="shape-1.png" alt="" class="hero_bg_shape hero_bg_shape1">
+            <img src="shape-2.png" alt="" class="hero_bg_shape hero_bg_shape2">
+            <img src="shape-3.png" alt="" class="hero_bg_shape hero_bg_shape3">
+            <img src="shape-4.png" alt="" class="hero_bg_shape hero_bg_shape4">
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <img src="about-shape-1.png" alt="" class="about_shape about_shape1">
+        <img src="about-shape-2.png" alt="" class="about_shape about_shape2">
+        <img src="about-shape-3.png" alt="" class="about_shape about_shape3">
+        <div class="headings">
+            <h1>About <span>Me</span></h1>
+            <div class="anim_line_box"></div>
+        </div>
+        <div class="about_container">
+            <div class="about_left">
+                <h1>Dream big, work hard, stay focused.</h1>
+                <p class="p_left">Dream big and set your sights high, no goal is too far when you believe in
+                    yourself. Stay
+                    dedicated and focused, and the journey will turn your aspirations into reality.</p>
+                <div class="client_name">
+                    <h3>Computer Science Student</h3>
+                    <p class="p_left">Luka Zotovikj</p>
+                </div>
+            </div>
+            <div class="about_img">
+                <img src="about2.png" alt="" class="about_image">
+                <div class="hidden_icons">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/lukazotovic/" target="_blank"><i
+                                class="ri-linkedin-fill"></i></a>
+                        <!-- <img src="item-1.png" alt=""> -->
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com/LZotovic" target="_blank"><i class="ri-github-fill"></i></a>
+                        <!-- <img src="item-2.png" alt=""> -->
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.instagram.com/l.zotovic/" target="_blank"><i
+                                class="ri-instagram-fill"></i></a>
+                        <!-- <img src="item-3.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="about_right">
+                <div class="about_info">
+                    <!-- Information1 -->
+                    <div class="about_det">
+                        <div class="about_det_icon">
+                            <!-- <div class="about_icon">
+                                <img src="logo-2.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="value">90%</div>
+                        <div class="det_info">
+                            <h2 class="color">C++</h2>
+                            <p class="color_p">Object-Oriented Programming | Data Structures | Algorithms</p>
+                        </div>
+                    </div>
+                    <!-- Information2 -->
+                    <div class="about_det">
+                        <!-- <div class="about_det_icon">
+                            <div class="about_icon">
+                                <img src="logo-3.png" alt="">
+                            </div>
+                            <div class="about_icon">
+                                <img src="logo-4.png" alt="">
+                            </div>
+                        </div> -->
+                        <div class="value">80%</div>
+                        <div class="det_info">
+                            <h2 class="color">Web Design <span></span></h2>
+                            <p class="color_p">HTML | CSS | JavaScript</p>
+                        </div>
+                    </div>
+                    <!-- Information3 -->
+                    <div class="about_det">
+                        <div class="about_det_icon">
+                            <!-- <div class="about_icon">
+                                <img src="logo-5.png" alt="">
+                            </div>
+                            <div class="about_icon">
+                                <img src="logo-6.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="value">85%</div>
+                        <div class="det_info">
+                            <h2 class="color">Graphic Design<span></span></h2>
+                            <p class="color_p">Photoshop | Illustrator | InDesign</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EDUCATION -->
+    <section class="education_experience">
+        <img src="achieve-shape-1.png" alt="" class="achieve_shape achieve-shape-1">
+        <img src="achieve-shape-2.png" alt="" class="achieve_shape achieve-shape-2">
+        <!-- <img src="about-shape-3.png" alt="" class="achieve_shape achieve-shape-3"> -->
+        <div class="headings">
+            <h1>Journey & <span>Milestones</span></h1>
+            <div class="anim_line_box"></div>
+        </div>
+        <div class="education_btn">
+            <button class="education">Education</button>
+            <button class="experience">Experience</button>
+        </div>
+        <div class="education_container">
+            <div class="education_left">
+                <div class="education_box hide_box">
+                    <h2>Semos Education <span>2022-2024</span></h2>
+                    <p>Courses Taken:
+                        Excel | Word | PowerPoint | Photoshop</p>
+                </div>
+                <div class="education_box show_box">
+                    <h2>High School: <span>Josip Broz Tito 2020 - 2024</span></h2>
+                    <p>Field of Study: Natural Sciences and Mathematics <br>
+                        Location: Skopje, North Macedonia <br>
+                        Grade: 1.0</p>
+                </div>
+                <div class="education_box hide_box">
+                    <h2>Bachelor in Computer Science <span>University of Heidelberg</span></h2>
+                    <p>Currently pursuing my Bachelor’s degree in Computer Science at the University of Heidelberg,
+                        Germany. Focused on building a strong foundation in programming, data structures, and software
+                        development</p>
+                </div>
+                <div class="education_box show_box">
+                    <h2>Self-Study</h2>
+                    <p>In my free time, I dedicate myself to self-study, exploring various subjects and enhancing my
+                        knowledge independently. This hobby helps me grow both personally and academically, expanding my
+                        skillset and understanding.</p>
+                </div>
+            </div>
+            <div class="gap_line"></div>
+            <div class="experience_right">
+                <div class="experience_box show_box">
+                    <h2>Internship: <span>iDS Imaging Development Systems GmbH 2022</span></h2>
+                    <p>Location: Heilbronn, Germany <br>
+                        Industry: Information and Communication | Production of Industrial Cameras | Software
+                        Development | Hardware</p>
+                </div>
+                <div class="experience_box hide_box">
+                    <h2>Part Time: <span>Deutsche Telekom & Helpsense</span></h2>
+                    <p> Location: Skopje, North Macedonia
+                        Department: FTTH - Fiber To The Home <br>
+                        Industry: Information and Communication | Fiber Optic Expansion</p>
+                </div>
+                <div class="experience_box show_box">
+                    <h2>StartUp Academy <span>2023</span></h2>
+                    <p>StartUp Academy at the American University in Bulgaria <br>
+                        Supported by the U.S. Embassy and the IEE Association</p>
+                </div>
+                <div class="experience_box hide_box">
+                    <h2>Adobe Certified Professional <span>World Championship </span></h2>
+                    <p>Location: Los Angeles, California 2024 <br>
+                        Awarding Institution: Certiport & Adobe
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="service_cards" id="services">
+        <div class="service_card">
+            <img src="service-1.png" alt="" class="service_img">
+            <h2>Graphic Design</h2>
+            <p>Develop your Visual Identity.</p>
+        </div>
+        <div class="service_card">
+            <img src="service-2.png" alt="" class="service_img">
+            <h2>Web Design</h2>
+            <p>Design Websites with Purpose.</p>
+        </div>
+        <div class="service_card">
+            <img src="service-3.png" alt="" class="service_img">
+            <h2>UX/UI Design</h2>
+            <p>Ideas into Interactive Designs.</p>
+        </div>
+        <div class="service_card">
+            <img src="service-4.png" alt="" class="service_img">
+            <h2>Tutoring</h2>
+            <p>Unlock Your Full Potential.</p>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="headings">
+            <h1>Featured <span>Projects</span></h1>
+            <div class="anim_line_box"></div>
+            <h2>COMING <span> SOON </span></h2>
+        </div>
+        <!-- <div class="projects_btns">
+            <button data-filter="all">All</button>
+            <button data-filter=".category-a">Web</button>
+            <button data-filter=".category-b">Apps</button>
+            <button data-filter=".category-c">Graphics</button>
+            <button data-filter=".category-d">Templates</button>
+        </div> -->
+        <!-- <div class="projects_cards">
+            card 1
+            <div class="project_card mix category-a category-c category-d">
+                <div class="project_img">
+                    <img src="project-1.jpg" alt="">
+                </div>
+                <div class="project_info">
+                    <h2>Minimart - ECommerce</h2>
+                    <h5>Graphics | Web | App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia, consectetur rerum
+                        <span>Read More</span>
+                    </p>
+                </div>
+            </div>
+            card 2
+            <div class="project_card mix category-b category-c ">
+                <div class="project_img">
+                    <img src="project-2.jpg" alt="">
+                </div>
+                <div class="project_info">
+                    <h2>Luxus - Website</h2>
+                    <h5>App | Graphics | Templates</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia, consectetur rerum
+                         <span>Read More</span>
+                    </p>
+                </div>
+            </div>
+            card 3
+            <div class="project_card mix category-c category-d category-a">
+                <div class="project_img">
+                    <img src="project-3.jpg" alt="">
+                </div>
+                <div class="project_info">
+                    <h2>Game - App</h2>
+                    <h5>Graphics | Web | App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia, consectetur rerum
+                        <span>Read More</span> 
+                    </p>
+                </div>
+            </div>
+             card 4  -->
+            <!-- <div class="project_card mix category-d category-b">
+                <div class="project_img">
+                    <img src="project-4.jpg" alt="">
+                </div>
+                <div class="project_info">
+                    <h2>Minimart - ECommerce</h2>
+                    <h5>Graphics | Web | App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia, consectetur rerum
+                        <span>Read More</span>
+                    </p>
+                </div>
+            </div> -->
+            <!-- card 5 -->
+            <!-- <div class="project_card mix category-a category-b category-d">
+                <div class="project_img">
+                    <img src="project-5.jpg" alt="">
+                </div>
+                <div class="project_info">
+                    <h2>Minimart - ECommerce</h2>
+                    <h5>Graphics | Web | App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia, consectetur rerum
+                        <span>Read More</span>
+                    </p>
+                </div>
+            </div> -->
+            <!-- card 6 -->
+            <!-- <div class="project_card mix category-b category-c category-a category-d">
+                <div class="project_img">
+                    <img src="project-6.jpg" alt="">
+                </div>
+                <div class="project_info">
+                    <h2>Minimart - ECommerce</h2>
+                    <h5>Graphics | Web | App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia, consectetur rerum
+                        <span>Read More</span>
+                    </p>
+                </div>
+            </div>
+        </div> -->
+            <img src="about-shape-3.png" alt="" class="projects_shape">
+            <img src="achieve-shape-1.png" alt="" class="projects_shape projects_shape2">
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <!-- Contact Me Section -->
+        <div class="contact_wrapper">
+            <div class="contact_form" id="contact">
+                <h2>Contact <span>Me</span></h2>
+                <div class="anim_line_box"></div>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="input_box">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input_box">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input_box">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <!-- Socials Links -->
+        <p>© Copyright 2025. All Rights Reserved </p>
+        <div class="social_icons">
+            <a href="https://www.linkedin.com/in/lukazotovic/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://github.com/LZotovic" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="https://www.instagram.com/l.zotovic/" target="_blank"><i class="ri-instagram-fill"></i></a>
+            <a href="" target="_blank"><i class="ri-discord-fill"></i></a>
+        </div>
+    </section>
+
+    <!-- Typed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <!-- Mix It Up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <!-- Slide swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
